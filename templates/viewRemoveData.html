@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Remove</title>
+</head>
+<body>
+  <h2>All Students</h2>
+  <table border="1" >
+    <thead>
+      <tr>
+        <th>Roll_No</th>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>Year</th>
+        <th>Mark</th>
+        <th>remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for student in students %}
+        <tr>
+          <td>{{student[0]}}</td>
+          <td>{{student[1]}}</td>
+          <td>{{student[2]}}</td>
+          <td>{{student[3]}}</td>
+          <td>{{student[4]}}</td>
+          <td><a href="{{url_for('removeStudent',rollNo=student[0])}}">delete</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p><a href="{{url_for('dashboard')}}">Back to Dashboard</a></p>
+</body>
+</html>

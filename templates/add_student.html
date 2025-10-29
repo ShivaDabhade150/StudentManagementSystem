@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+</head>
+<body>
+    <h1>Please Enter Add Student</h1>
+    <form method="post" action="{{url_for('addStudentDB')}}">
+        
+        <div class="stud-info">
+            <label for="rollNo">Enter Roll No:</label>
+            <input id="rollNo" name="rollNo">
+        </div>
+        <br>
+        <div class="stud-info">
+            <label for="name">Enter Name:</label>
+            <input id="name" name="name">
+        </div>
+        <br>
+        <div class="stud-info">
+            <label for="branch">Enter Branch:</label>
+            <input id="branch" name="branch">
+        </div>
+        <br>
+         <div class="stud-info">
+            <label for="year">Enter Year:</label>
+            <input id="year" name="year">
+        </div>
+        <br>
+         <div class="stud-info">
+            <label for="mark">Enter Mark:</label>
+            <input id="mark" name="mark">
+        </div>
+        <br>
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+
+<br>
+<br>
+<p><a href="{{url_for('dashboard')}}">Back to Dashboard</a></p>
+</html>

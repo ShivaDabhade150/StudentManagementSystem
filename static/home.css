@@ -1,0 +1,34 @@
+body {
+    padding: 1rem;
+    background-image: url("home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;                /* enable flexbox */
+    justify-content: center;      /* center horizontally */
+    align-items: center;          /* center vertically */
+    text-align: center;           
+    color: #111111;
+}
+
+span {
+    font-size: 1.4rem;
+}
+
+div {
+    background-color: white;
+    width: 40rem;
+    height: auto;
+    padding: 2rem;
+    border-radius: 10px;          /* optional: rounded corners */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* optional: soft shadow */
+}
+
+
+a{
+    text-decoration: none;
+}
